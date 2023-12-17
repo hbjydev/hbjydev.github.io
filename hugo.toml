@@ -7,7 +7,7 @@ paginate = 5
 [params]
   contentTypeName = "posts"
   themeColor = "pink"
-  showMenuItems = 2
+  showMenuItems = 4
   showLanguageSelector = false
   fullWidthTheme = false
   centerTheme = true
@@ -15,8 +15,8 @@ paginate = 5
   enableGitInfo = true
 
 [params.twitter]
-  creator = ""
-  site = ""
+  creator = "hayden_dev"
+  site = "hayden_dev"
 
 [languages]
   [languages.en.params]
@@ -49,7 +49,12 @@ paginate = 5
         name = "RSS"
         url = "/index.xml"
 
-#[module]
-#  replacements = "github.com/panr/hugo-theme-terminal -> themes/terminal"
-#  [[module.imports]]
-#    path = 'github.com/panr/hugo-theme-terminal/v3'
+      [[languages.en.menu.main]]
+        identifier = "github"
+        name = "GitHub"
+        url = "https://github.com/hbjydev"
+
+      [[languages.en.menu.main]]
+        identifier = "twitter"
+        name = "Twitter (not X)"
+        url = "https://twitter.com/hayden_dev"
