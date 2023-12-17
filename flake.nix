@@ -7,16 +7,16 @@
 
       perSystem = { self', pkgs, ... }:
         let
-          inherit (pkgs) just hugo;
+          inherit (pkgs) just hugo updog;
         in
         {
           devShells.default = pkgs.mkShell {
-            buildInputs = [ just ];
-            inputsFrom = [ self'.packages.dist ];
+            buildInputs = [ just updog ];
+            inputsFrom = [ self'.packages.default ];
           };
 
           packages = {
-            dist = pkgs.runCommand "dist" {
+            default = pkgs.runCommand "dist" {
               src = ./.;
               buildInputs = [ hugo ];
             } ''
