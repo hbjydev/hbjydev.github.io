@@ -22,10 +22,8 @@ paginate = 5
   [languages.en.params]
     languageName = "English"
     title = "Hayden's Home"
-    subtitle = "A simple, retro theme for Hugo"
-    owner = ""
-    keywords = ""
-    copyright = ""
+    subtitle = "The home of Hayden, a DevOps & Software engineer from Sheffield, UK."
+    copyright = "All content in this site is available gratis under the APL2.0 license."
     menuMore = "Show more"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
