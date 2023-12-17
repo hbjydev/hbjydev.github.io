@@ -7,11 +7,11 @@ readingTime = true
 
 > Every great journey begins with a single step.
 
-These were the words of my primary school. Now... do I think starting a blog
-that took way too much effort to begin building is a "great journey"? No. _But_,
-I think there's a chance it could be a useful tool for me in progressing my
-knowledge and ability to convey stuff to people, which are both very useful
-tools in my arsenal.
+This was my primary school's slogan as far back as I can remember. Now... do I
+think starting a blog is a "great journey"? No. _But_, I think there's a chance
+it could be a useful tool for me in progressing my knowledge and ability to
+convey stuff to people, which are both very useful tools to me (and skills I'm
+very much lacking).
 
 So hi, this is me, starting to blog.
 
