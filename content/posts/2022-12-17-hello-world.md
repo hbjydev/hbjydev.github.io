@@ -1,9 +1,9 @@
-+++
-title = "Hello, world!"
-date = "2022-12-17T00:24:20Z"
-description = "Every great journey begins with a single step."
-readingTime = true
-+++
+---
+title: Hello, world!
+date: 2022-12-17
+description: Every great journey begins with a single step.
+readingTime: true
+---
 
 > Every great journey begins with a single step.
 

@@ -1,22 +1,53 @@
 baseURL = 'https://hbjy.dev'
 languageCode = 'en-gb'
 title = "Hayden's Home"
-theme = 'terminal'
+theme = 'risotto'
 paginate = 5
 
-[params]
-  contentTypeName = "posts"
-  themeColor = "pink"
-  showMenuItems = 4
-  showLanguageSelector = false
-  fullWidthTheme = false
-  centerTheme = true
-  autoCover = true
-  enableGitInfo = true
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 1
 
-[params.twitter]
-  creator = "hayden_dev"
-  site = "hayden_dev"
+  [[menu.main]]
+    identifier = "rss"
+    name = "RSS"
+    url = "/index.xml"
+    weight = 2
+
+[params]
+  [params.about]
+    title = "hayden's home"
+    description = "blog of a lowly devops engineer from the uk, hoping to maybe make you laugh sometimes"
+
+  [params.theme]
+    palette = "oxocarbon"
+
+  [params.twitter]
+    creator = "hayden_dev"
+    site = "hayden_dev"
+
+  [[params.socialLinks]]
+    icon = "fa-brands fa-github"
+    title = "GitHub"
+    url = "https://github.com/hbjydev"
+
+  [[params.socialLinks]]
+    icon = "fa-brands fa-twitter"
+    title = "Twitter"
+    url = "https://twitter.com/hayden_dev"
+
+  [[params.socialLinks]]
+    icon = "fa-brands fa-twitch"
+    title = "Twitch"
+    url = "https://twitch.tv/hayden_dev"
+
+  [[params.socialLinks]]
+    icon = "fa-solid fa-envelope"
+    title = "Email me"
+    url = "mailto:hayden@kuraudo.io"
 
 [languages]
   [languages.en.params]
@@ -38,23 +69,28 @@ paginate = 5
       logoText = "Hayden's Home"
       logoHomeLink = "/"
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
+[privacy]
+  [privacy.vimeo]
+    disabled = false
+    simple = true
 
-      [[languages.en.menu.main]]
-        identifier = "rss"
-        name = "RSS"
-        url = "/index.xml"
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
 
-      [[languages.en.menu.main]]
-        identifier = "github"
-        name = "GitHub"
-        url = "https://github.com/hbjydev"
+  [privacy.instagram]
+    disabled = false
+    simple = true
 
-      [[languages.en.menu.main]]
-        identifier = "twitter"
-        name = "Twitter (not X)"
-        url = "https://twitter.com/hayden_dev"
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
