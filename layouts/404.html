@@ -1,0 +1,5 @@
+{{ define "main" }}
+  <h1>{{ "404" | markdownify }}</h1>
+  <p>You found a page that doesn't exist (weird).</p>
+  <p>Maybe <a href="{{ "" | relURL }}">Go home</a>?</p>
+{{ end }}
