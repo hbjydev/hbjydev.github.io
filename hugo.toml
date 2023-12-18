@@ -21,6 +21,7 @@ paginate = 5
   [params.about]
     title = "hayden's home"
     description = "blog of a lowly devops engineer from the uk, hoping to maybe make you laugh sometimes"
+    logo = "favicon-32x32.png"
 
   [params.theme]
     palette = "oxocarbon"
