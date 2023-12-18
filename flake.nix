@@ -7,11 +7,11 @@
 
       perSystem = { self', pkgs, ... }:
         let
-          inherit (pkgs) just hugo updog;
+          inherit (pkgs) just hugo jq;
         in
         {
           devShells.default = pkgs.mkShell {
-            buildInputs = [ just updog ];
+            buildInputs = [ just jq ];
             inputsFrom = [ self'.packages.default ];
           };
 
@@ -22,7 +22,7 @@
             } ''
               work=$(mktemp -d)
               cp -r $src/* $work
-              (cd $work && hugo)
+              (cd $work && hugo --minify)
               cp -r $work/public $out
             '';
           };
