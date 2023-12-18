@@ -1,6 +1,6 @@
 ---
 title: Building a Hugo site with Nix
-date: 2022-12-17
+date: 2023-12-18
 description: How I learned to build up a Hugo site using Nix.
 readingTime: true
 ---
