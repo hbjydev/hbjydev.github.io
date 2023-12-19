@@ -23,6 +23,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
+      - uses: actions/configure-pages@v4
       - run: nix develop -c just build
       - uses: actions/upload-pages-artifact@v2
         with:
