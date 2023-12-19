@@ -1,0 +1,73 @@
+---
+baseURL: 'https://hbjy.dev'
+languageCode: 'en-gb'
+title: "hayden@web ~"
+theme: 'risotto'
+paginate: 5
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts
+      weight: 1
+
+    - identifier: rss
+      name: RSS
+      url: /index.xml
+      weight: 2
+
+params:
+  about:
+    title: hayden's home
+    description: blog of a lowly devops engineer from the uk, hoping to maybe make you laugh sometimes
+    logo: favicon-32x32.png
+
+  theme:
+    palette: "oxocarbon"
+
+  twitter:
+    creator: "hayden_dev"
+    site: "hayden_dev"
+
+  socialLinks:
+    - icon: "fa-brands fa-github"
+      title: "GitHub"
+      url: "https://github.com/hbjydev"
+
+    - icon: "fa-brands fa-twitter"
+      title: "Twitter"
+      url: "https://twitter.com/hayden_dev"
+
+    - icon: "fa-brands fa-twitch"
+      title: "Twitch"
+      url: "https://twitch.tv/hayden_dev"
+
+    - icon: "fa-solid fa-envelope"
+      title: "Email me"
+      url: "mailto:hayden@kuraudo.io"
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+
+  twitter:
+    disableInlineCSS: true
