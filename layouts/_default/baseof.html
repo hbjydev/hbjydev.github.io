@@ -14,6 +14,7 @@
 
             <section class="page__body">
                 {{- block "main" . }}{{- end }}
+                <div class="giscus"></div>
             </section>
 
             <section class="page__aside">
@@ -27,6 +28,7 @@
             </section>
 
             <footer class="page__footer">
+                {{- block "footer" . }}{{- end }}
                 {{- partial "footer.html" . -}}
             </footer>
 
