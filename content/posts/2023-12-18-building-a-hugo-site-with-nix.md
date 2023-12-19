@@ -64,18 +64,21 @@ All said, here's what I landed on, putting it in my `perSystem` block in my
 flake:
 
 ```nix
-packages = {
-  default = pkgs.runCommand "dist" {
-    src = ./.;
-    buildInputs = [ hugo ];
-  } ''
-    work=$(mktemp -d)
-    cp -r $src/* $work
-    (cd $work && hugo --minify)
-    cp -r $work/public $out
-    rm -rf $work
-  '';
-};
+{ pkgs, ... }: {
+    ...
+    packages = {
+      default = pkgs.runCommand "dist" {
+        src = ./.;
+        buildInputs = [ hugo ];
+      } ''
+        work=$(mktemp -d)
+        cp -r $src/* $work
+        (cd $work && hugo --minify)
+        cp -r $work/public $out
+        rm -rf $work
+      '';
+    };
+}
 ```
 
 So what we've got here is `runCommand`, creating an output in the store called

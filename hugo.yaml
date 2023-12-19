@@ -56,6 +56,10 @@ outputFormats:
 outputs:
   home: [html, rss, giscus]
 
+markup:
+  highlight:
+    noClasses: false
+
 privacy:
   vimeo:
     disabled: false
