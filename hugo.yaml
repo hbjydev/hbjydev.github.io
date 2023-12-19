@@ -47,6 +47,15 @@ params:
       title: "Email me"
       url: "mailto:hayden@kuraudo.io"
 
+outputFormats:
+  giscus:
+    baseName: giscus
+    isPlainText: true
+    mediaType: application/json
+
+outputs:
+  home: [html, rss, giscus]
+
 privacy:
   vimeo:
     disabled: false
